@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Form.css"
 import img from "../../images/userdetail.jpeg"
+import { Link,useNavigate } from "react-router-dom";
 
 export default function Form() {
     const[detail,setDetail]=useState({
@@ -17,6 +18,10 @@ export default function Form() {
         value=e.target.value;
         setDetail({...detail,[name]:value})
 
+    }
+    const navigate = useNavigate();
+    const move =()=>{
+        navigate("/details");
     }
     const handleSubmit=async(e)=>{
         e.preventDefault();
@@ -111,7 +116,12 @@ export default function Form() {
             required
             placeholder="Enter your salary"
           />
-          <button className="signupbtn" onClick={handleSubmit}>SUBMIT</button>
+          <button className="signupbtn" onClick={handleSubmit}>
+            SUBMIT
+          </button>
+          <button className="detailsbtn" onClick={move} >
+            View Details
+          </button>
         </div>
       </div>
     </div>
