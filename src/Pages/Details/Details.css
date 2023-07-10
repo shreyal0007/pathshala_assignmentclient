@@ -1,0 +1,72 @@
+.body1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  height: 100%;
+  background-color: #272c37;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.7rem;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.cardimage {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  
+}
+.name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 0.2rem;
+}
+.profession {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+  margin-top: 0.1rem;
+  margin-bottom: 0%;
+}
+.followers1 {
+  margin-top: 0.1rem;
+  color: white;
+  margin-bottom: 0.1rem;
+}
+.div4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  width: 100%;
+  max-width: 974px;
+}
+.followbutton{
+   
+        background-color: #f2902e;
+        border: none;
+        border-radius: 0.2rem;
+        width: 100%;
+        height: 2.2vw;
+        color: black;
+        margin-top: 0.5vw;
+        font-size: small;
+}
